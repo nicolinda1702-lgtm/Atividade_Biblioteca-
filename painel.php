@@ -23,6 +23,9 @@ include("verificar_sessao.php");
         <!-- Cards grandes para facilitar a navegação -->
         <div class="painel-cards">
             <a href="cadastrar_livro.php" class="card-link">
+                Cadastrar Livro
+            </a>
+            <a href="listar_livros.php" class="card-link">
                 Listar Livros
             </a>
             <a href="logout.php" class="card-link">
