@@ -7,6 +7,7 @@
     <title>Cadastro de Usário - Biblioteca</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <h1>Cadastro de Usuário</h1>
@@ -15,12 +16,12 @@
         if (isset($_GET['erro']) && $_GET['erro'] === 'email') {
             echo '<div class= "mensagem-erro">Este email já está cadastrado.</div>';
         }
-      ?>
+        ?>
 
-        <form action="salvar_usuario.php" method="$_POST">
+        <form action="salvar_usuario.php" method="POST">
             <div class="form-group">
                 <label for="nome">Nome</label>
-                <input type="text" id="nome" placeholder="Digite seu nome" required>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
@@ -37,8 +38,9 @@
         </div>
         <a href="login.php" class="btn btn-voltar">Voltar para login</a>
         <div class="dica-navegacao">
-            <strong>Fluxo:</strong> Cadastro → Login → Painel → Gerencias Livros 
+            <strong>Fluxo:</strong> Cadastro → Login → Painel → Gerencias Livros
         </div>
     </div>
 </body>
+
 </html>
