@@ -1,12 +1,13 @@
 <?php
- 
+
 // Protege a página: só usuário logado podem cadastrar livros
 include("verificar_sessao.php");
- 
+
 ?>
- 
+
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +16,7 @@ include("verificar_sessao.php");
 </head>
 
 <body>
-   <div class="container">
+    <div class="container">
         <h1>Cadastrar Livro</h1>
         <p class="subtitulo">Preencha os dados do novo livro.</p>
 
@@ -37,7 +38,7 @@ include("verificar_sessao.php");
                 <select name="status" id="status" required>
                     <option value="Disponível">Disponível</option>
                     <option value="Emprestado">Emprestado</option>
-                </select>  
+                </select>
             </div>
 
             <button type="submit" class="btn btn-block btn-sucesso">
@@ -46,9 +47,10 @@ include("verificar_sessao.php");
         </form>
 
         <!-- Botão de volta par4a o painel principal -->
-         <a href="painel.php" class="btn btn-voltar">
+        <a href="painel.php" class="btn btn-voltar">
             Voltar para o Painel.
-         </a>
-   </div>
+        </a>
+    </div>
 </body>
+
 </html>
