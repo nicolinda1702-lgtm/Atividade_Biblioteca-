@@ -24,4 +24,4 @@ mysqli_query($conexao, $sql);
  
 // Redirecionamento para a lista de livros após salvar
 header("Localização: listar_livro.php");
-saída();
+exit();
